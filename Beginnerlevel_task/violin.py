@@ -3,7 +3,7 @@ import plotly.express as px
 scores = [45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]
 groups = ["Team 1", "Team 1", "Team 1", "Team 1",
            "Team 2", "Team 2","Team 2", "Team 2",
-             "Team 3", "Team 3", "Team 3", "Team 3",   ]
+             "Team 3", "Team 3", "Team 3", "Team 3", ]
 
 
 fig = px.violin(
@@ -15,6 +15,8 @@ fig = px.violin(
         "y" : "Score"
     }
 )
+
+
 fig.update_layout(
     title={
         "x": 0.5,
@@ -22,3 +24,6 @@ fig.update_layout(
     }
 )
 fig.show()
+
+
+
